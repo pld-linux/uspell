@@ -9,6 +9,7 @@ Group:		Libraries
 # -d :pserver:anoncvs:anoncvs@anoncvs.abisource.com:/cvsroot uspell
 Source0:	%{name}-%{snap}.tar.bz2
 # Source0-md5:	f50edc2a6228dd3f7e03dc72b9e7fb46
+Patch0:		%{name}-gcc34.patch
 # not exactly uspell homepage, but contains a little information
 URL:		http://www.abisource.com/enchant/
 BuildRequires:	autoconf
@@ -101,6 +102,7 @@ listy s³ów Raphaela Finkela.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %{__libtoolize}
