@@ -1,5 +1,5 @@
 Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
-Summary(pl):	Program spawdzaj±cy/poprawiaj±cy pisowniê dla s³owników w Unikodzie
+Summary(pl):	Program sprawdzaj±cy/poprawiaj±cy pisowniê dla s³owników w Unikodzie
 Name:		uspell
 Version:	1.1.1
 %define	snap	20031030
