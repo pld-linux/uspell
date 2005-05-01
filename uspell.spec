@@ -63,14 +63,14 @@ Requires:	%{name} = %{version}-%{release}
 American English dictionary (word list) for uspell. It's a
 concatenation from scowl-5 English and American lists, with
 case-insensitive words capitalized. See
-http://wordlist.sourceforge.net/ .
+<http://wordlist.sourceforge.net/>.
 
 %description en_US -l pl
 Ten pakiet zawiera s³ownik (listê s³ów) angielski w odmianie
 amerykañskiej dla uspella. Jest to po³±czenie list English i American
 ze scowl-5, ze s³owami nie wymagaj±cymi pisania wielk± liter±
 przerobionymi w ca³o¶ci na wielkie litery. Wiêcej informacji na
-stronie http://wordlist.sourceforge.net/ .
+stronie <http://wordlist.sourceforge.net/>.
 
 %package he
 Summary:	Hebrew dictionary (word list) for uspell
