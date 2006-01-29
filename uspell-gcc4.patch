@@ -1,0 +1,12 @@
+diff -aurN uspell.orig/src/uspell.h uspell/src/uspell.h
+--- uspell.orig/src/uspell.h	2003-07-24 02:20:04.000000000 +0200
++++ uspell/src/uspell.h	2006-01-29 08:39:41.024369000 +0100
+@@ -136,7 +136,7 @@
+ 			const wide_t *target, const int targetLength);
+ 		int wordDiff(const wide_t *string1, const int string1Length,
+ 			const wide_t *string2, const int string2Length);
+-		void uSpell::acceptGoodWord(const utf8_t *buf, int wordPosition,
++		void acceptGoodWord(const utf8_t *buf, int wordPosition,
+ 			int fileNumber);
+ }; // class uSpell
+ 
