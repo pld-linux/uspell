@@ -2,15 +2,14 @@ Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
 Summary(pl):	Program sprawdzaj±cy/poprawiaj±cy pisowniê dla s³owników w Unikodzie
 Name:		uspell
 Version:	1.1.1
-%define	snap	20031030
-Release:	0.%{snap}.1
+%define		snap	20031030
+Release:	0.%{snap}.2
 License:	GPL
 Group:		Libraries
 # -d :pserver:anoncvs:anoncvs@anoncvs.abisource.com:/cvsroot uspell
 Source0:	%{name}-%{snap}.tar.bz2
 # Source0-md5:	f50edc2a6228dd3f7e03dc72b9e7fb46
-Patch0:		%{name}-gcc34.patch
-Patch1:		%{name}-gcc4.patch
+Patch0:		%{name}-gcc4.patch
 # not exactly uspell homepage, but contains a little information
 URL:		http://www.abisource.com/enchant/
 BuildRequires:	autoconf
@@ -104,7 +103,6 @@ listy s³ów Raphaela Finkela.
 %prep
 %setup -q -n %{name}
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__libtoolize}
