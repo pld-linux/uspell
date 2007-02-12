@@ -1,5 +1,5 @@
 Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
-Summary(pl):	Program sprawdzaj±cy/poprawiaj±cy pisowniÍ dla s≥ownikÛw w Unikodzie
+Summary(pl.UTF-8):   Program sprawdzajƒÖcy/poprawiajƒÖcy pisowniƒô dla s≈Çownik√≥w w Unikodzie
 Name:		uspell
 Version:	1.1.1
 %define		snap	20031030
@@ -23,14 +23,14 @@ Uspell is a spelling checker/corrector for Unicode-encoded
 dictionaries, primarily for Yiddish, Hebrew, and Eastern European
 languages.
 
-%description -l pl
+%description -l pl.UTF-8
 Uspell to program i biblioteka do kontroli i poprawiania pisowni dla
-s≥ownikÛw zakodowanych w Unikodzie, g≥Ûwnie dla jÍzykÛw jidysz,
+s≈Çownik√≥w zakodowanych w Unikodzie, g≈Ç√≥wnie dla jƒôzyk√≥w jidysz,
 hebrajskiego oraz wschodnioeuropejskich.
 
 %package devel
 Summary:	Header files for uspell library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki uspell
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki uspell
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -38,24 +38,24 @@ Requires:	libstdc++-devel
 %description devel
 Header files for uspell library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki uspell.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki uspell.
 
 %package static
 Summary:	Static uspell library
-Summary(pl):	Statyczna biblioteka uspell
+Summary(pl.UTF-8):   Statyczna biblioteka uspell
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static uspell library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka uspell.
 
 %package en_US
 Summary:	American English dictionary (word list) for uspell
-Summary(pl):	Angielski s≥ownik (lista s≥Ûw) dla uspella
+Summary(pl.UTF-8):   Angielski s≈Çownik (lista s≈Ç√≥w) dla uspella
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
 
@@ -65,16 +65,16 @@ concatenation from scowl-5 English and American lists, with
 case-insensitive words capitalized. See
 <http://wordlist.sourceforge.net/>.
 
-%description en_US -l pl
-Ten pakiet zawiera s≥ownik (listÍ s≥Ûw) angielski w odmianie
-amerykaÒskiej dla uspella. Jest to po≥±czenie list English i American
-ze scowl-5, ze s≥owami nie wymagaj±cymi pisania wielk± liter±
-przerobionymi w ca≥o∂ci na wielkie litery. WiÍcej informacji na
+%description en_US -l pl.UTF-8
+Ten pakiet zawiera s≈Çownik (listƒô s≈Ç√≥w) angielski w odmianie
+ameryka≈Ñskiej dla uspella. Jest to po≈ÇƒÖczenie list English i American
+ze scowl-5, ze s≈Çowami nie wymagajƒÖcymi pisania wielkƒÖ literƒÖ
+przerobionymi w ca≈Ço≈õci na wielkie litery. Wiƒôcej informacji na
 stronie <http://wordlist.sourceforge.net/>.
 
 %package he
 Summary:	Hebrew dictionary (word list) for uspell
-Summary(pl):	Hebrajski s≥ownik (lista s≥Ûw) dla uspella
+Summary(pl.UTF-8):   Hebrajski s≈Çownik (lista s≈Ç√≥w) dla uspella
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
 
@@ -82,13 +82,13 @@ Requires:	%{name} = %{version}-%{release}
 Hebrew dictionary (word list) for uspell. It comes from the hspell
 source.
 
-%description he -l pl
-Hebrajski s≥ownik (lista s≥Ûw) dla uspella. Pochodzi ze ºrÛde≥
+%description he -l pl.UTF-8
+Hebrajski s≈Çownik (lista s≈Ç√≥w) dla uspella. Pochodzi ze ≈∫r√≥de≈Ç
 hspella.
 
 %package yi
 Summary:	Yiddish dictionary (word list) for uspell
-Summary(pl):	S≥ownik (lista s≥ow) jÍzyka jidysz dla uspella
+Summary(pl.UTF-8):   S≈Çownik (lista s≈Çow) jƒôzyka jidysz dla uspella
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
 
@@ -96,9 +96,9 @@ Requires:	%{name} = %{version}-%{release}
 Yiddish dictionary (word list) for uspell. It comes from Raphael
 Finkel's personal word list.
 
-%description yi -l pl
-S≥ownik (lista s≥ow) jÍzyka jidysz dla uspella. Pochodzi z w≥asnej
-listy s≥Ûw Raphaela Finkela.
+%description yi -l pl.UTF-8
+S≈Çownik (lista s≈Çow) jƒôzyka jidysz dla uspella. Pochodzi z w≈Çasnej
+listy s≈Ç√≥w Raphaela Finkela.
 
 %prep
 %setup -q -n %{name}
