@@ -1,5 +1,5 @@
 Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
-Summary(pl.UTF-8):   Program sprawdzający/poprawiający pisownię dla słowników w Unikodzie
+Summary(pl.UTF-8):	Program sprawdzający/poprawiający pisownię dla słowników w Unikodzie
 Name:		uspell
 Version:	1.1.1
 %define		snap	20031030
@@ -30,7 +30,7 @@ hebrajskiego oraz wschodnioeuropejskich.
 
 %package devel
 Summary:	Header files for uspell library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki uspell
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki uspell
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -43,7 +43,7 @@ Pliki nagłówkowe biblioteki uspell.
 
 %package static
 Summary:	Static uspell library
-Summary(pl.UTF-8):   Statyczna biblioteka uspell
+Summary(pl.UTF-8):	Statyczna biblioteka uspell
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -55,7 +55,7 @@ Statyczna biblioteka uspell.
 
 %package en_US
 Summary:	American English dictionary (word list) for uspell
-Summary(pl.UTF-8):   Angielski słownik (lista słów) dla uspella
+Summary(pl.UTF-8):	Angielski słownik (lista słów) dla uspella
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
 
@@ -74,7 +74,7 @@ stronie <http://wordlist.sourceforge.net/>.
 
 %package he
 Summary:	Hebrew dictionary (word list) for uspell
-Summary(pl.UTF-8):   Hebrajski słownik (lista słów) dla uspella
+Summary(pl.UTF-8):	Hebrajski słownik (lista słów) dla uspella
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
 
@@ -88,7 +88,7 @@ hspella.
 
 %package yi
 Summary:	Yiddish dictionary (word list) for uspell
-Summary(pl.UTF-8):   Słownik (lista słow) języka jidysz dla uspella
+Summary(pl.UTF-8):	Słownik (lista słow) języka jidysz dla uspella
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
 
