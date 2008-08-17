@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Program sprawdzający/poprawiający pisownię dla słowników
 Name:		uspell
 Version:	1.1.1
 %define		snap	20031030
-Release:	0.%{snap}.2
+Release:	0.%{snap}.3
 License:	GPL
 Group:		Libraries
 # -d :pserver:anoncvs:anoncvs@anoncvs.abisource.com:/cvsroot uspell
@@ -130,20 +130,21 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc doc/doc.txt
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_bindir}/udriver
+%attr(755,root,root) %{_libdir}/libuspell.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libuspell.so.1
 %dir %{_datadir}/uspell
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
+%attr(755,root,root) %{_libdir}/libuspell.so
+%{_libdir}/libuspell.la
 %{_includedir}/uspell
-%{_pkgconfigdir}/*.pc
+%{_pkgconfigdir}/libuspell.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libuspell.a
 
 %files en_US
 %defattr(644,root,root,755)
