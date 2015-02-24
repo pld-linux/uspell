@@ -1,4 +1,4 @@
-%define	rel	3
+%define	rel	4
 Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
 Summary(pl.UTF-8):	Program sprawdzający/poprawiający pisownię dla słowników w Unikodzie
 Name:		uspell
