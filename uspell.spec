@@ -1,9 +1,10 @@
+%define	rel	3
 Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
 Summary(pl.UTF-8):	Program sprawdzający/poprawiający pisownię dla słowników w Unikodzie
 Name:		uspell
 Version:	1.1.1
 %define		snap	20031030
-Release:	0.%{snap}.3
+Release:	0.%{snap}.%{rel}
 License:	GPL
 Group:		Libraries
 # -d :pserver:anoncvs:anoncvs@anoncvs.abisource.com:/cvsroot uspell
