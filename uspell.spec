@@ -1,16 +1,18 @@
-%define	rel	4
+%define	rel	1
 Summary:	A spelling checker/corrector for Unicode-encoded dictionaries
 Summary(pl.UTF-8):	Program sprawdzający/poprawiający pisownię dla słowników w Unikodzie
 Name:		uspell
 Version:	1.1.1
-%define		snap	20031030
+%define		snap	20170608
+%define		gitref	574aa7f6aae6775541dc3d6fc7d36e33dc7b8af7
 Release:	0.%{snap}.%{rel}
-License:	GPL
+License:	GPL v2
 Group:		Libraries
-# -d :pserver:anoncvs:anoncvs@anoncvs.abisource.com:/cvsroot uspell
-Source0:	%{name}-%{snap}.tar.bz2
-# Source0-md5:	f50edc2a6228dd3f7e03dc72b9e7fb46
-Patch0:		%{name}-gcc4.patch
+# FFU
+#Source0Download: https://github.com/AbiWord/uspell/releases
+# no releases yet, so use snapshot
+Source0:	https://github.com/AbiWord/uspell/archive/%{gitref}/%{name}-%{snap}.tar.gz
+# Source0-md5:	3778fcc9ab53969b5994b0555de79959
 # not exactly uspell homepage, but contains a little information
 URL:		http://www.abisource.com/enchant/
 BuildRequires:	autoconf
@@ -102,8 +104,7 @@ Słownik (lista słow) języka jidysz dla uspella. Pochodzi z własnej
 listy słów Raphaela Finkela.
 
 %prep
-%setup -q -n %{name}
-%patch0 -p1
+%setup -q -n %{name}-%{gitref}
 
 %build
 %{__libtoolize}
@@ -120,7 +121,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # missing from dict_DATA
-install dic/american.* $RPM_BUILD_ROOT%{_datadir}/uspell
+cp -p dic/american.* $RPM_BUILD_ROOT%{_datadir}/uspell
 
 %clean
 rm -rf $RPM_BUILD_ROOT
